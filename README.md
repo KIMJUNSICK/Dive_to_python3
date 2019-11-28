@@ -6,4 +6,4 @@ https://codeonweb.com/entry/d5944991-879e-4d94-9e02-b8704bc333d0
 
 ## Summarise the source like below
 - Define function & args that are not specified for data type
-
+- args are read by location or name
