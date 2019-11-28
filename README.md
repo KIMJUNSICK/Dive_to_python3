@@ -9,3 +9,4 @@ https://codeonweb.com/entry/d5944991-879e-4d94-9e02-b8704bc333d0
 - args are read by location or name
 - Documentation strings(docstring)
 - Import path 
+- What is Object in python?

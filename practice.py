@@ -36,3 +36,10 @@ print(sys.path)
 # '/usr/local/lib/python3.7/dist-packages',
 # '/usr/lib/python3/dist-packages'
 # ]
+
+
+# What is Object in python ?
+# maybe obj have attribute or method(ftn in obj)
+# everything in python is object, even Function
+# Function is first-class obj -> functional programming
+
