@@ -1,3 +1,5 @@
+import sys
+
 # def function's name(arg1, arg2...):
 # python args of function are not specified for data type
 # docstring is not just an annotation. ftn attribute called when runtime
@@ -23,3 +25,14 @@ approximate_size(10000, False)
 approximate_size(a_kilobyte_is_1024_bytes=False, size=2000)
 approximate_size(size=2000, a_kilobyte_is_1024_bytes=False)
 
+# when python import module, it searches for the following path
+print(sys.path)
+# [
+# '/home/junsik/projects/dive_to_python3',
+# '/usr/lib/python37.zip',
+# '/usr/lib/python3.7',
+# '/usr/lib/python3.7/lib-dynload',
+# '/home/junsik/.local/lib/python3.7/site-packages',
+# '/usr/local/lib/python3.7/dist-packages',
+# '/usr/lib/python3/dist-packages'
+# ]
