@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "/home/junsik/.local/share/virtualenvs/dive_to_python3-u3k5gsFy/bin/python",     ,   "python.formatting.provider": "black",
+    "python.pythonPath": "/home/junsik/.local/share/virtualenvs/dive_to_python3-u3k5gsFy/bin/python",
     "python.formatting.provider": "black",
     "python.linting.flake8Enabled": true,
     "python.linting.pylintEnabled": false,

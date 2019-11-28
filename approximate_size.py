@@ -23,10 +23,12 @@ def approximate_size(size, a_kilobyte_is_1024_bytes=True):
     for suffix in SUFFIXES[multiple]:
         size /= multiple
         if size < multiple:
-            return "{0:.1f} {1}".format(size, suffix)
+            return f"{round(size,1)} {suffix}"
 
     raise ValueError("number too large")
 
 
-print(approximate_size(1000000000000))
-print(approximate_size(1000000000000, False))
+if __name__ == "__main__":
+    print(approximate_size(1000000000000))
+    print(approximate_size(1000000000000, False))
+
