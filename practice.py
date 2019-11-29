@@ -1,8 +1,14 @@
 import sys
 
+
 # def function's name(arg1, arg2...):
 # python args of function are not specified for data type
 # docstring is not just an annotation. ftn attribute called when runtime
+
+SUFFIXES = {
+    1000: ["KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"],
+    1024: ["KiB", "MiB", "GiB", "TiB", "PiB", "EiB", "ZiB", "YiB"],
+}
 
 
 def approximate_size(size, a_kilobyte_is_1024_bytes=True):
@@ -15,6 +21,15 @@ def approximate_size(size, a_kilobyte_is_1024_bytes=True):
 
     Returns: string
     """
+    # code block is determined by indentation
+    if size < 0:
+        raise ValueError("number must be non-negative")
+
+    multiple = 1024 if a_kilobyte_is_1024_bytes else 1000
+    for suffix in SUFFIXES:
+        size /= multiple
+        if size < multiple:
+            return f"{size} {suffix}"
 
 
 # case1: args are read by location
