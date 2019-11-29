@@ -14,3 +14,4 @@ Summarise the source like below
 - What is Object in python?
 - Indentation 
 - Handle exceptions
+- Make sure case letter

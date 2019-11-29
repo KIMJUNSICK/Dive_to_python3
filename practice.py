@@ -63,3 +63,8 @@ print(sys.path)
 # everything in python is object, even Function
 # Function is first-class obj -> functional programming
 
+an_integer = 1
+print(an_integer)  # 1
+print(An_integer)  # NameError
+print(AN_INTEGER)  # NameError
+
