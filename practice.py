@@ -38,6 +38,12 @@ def approximate_size(size, a_kilobyte_is_1024_bytes=True):
         if size < multiple:
             return f"{size} {suffix}"
 
+    # every module in python have __name__ attribute
+    # if you import module __name__ is filename
+    # if you execute module independently, __name__ is '__main__'
+    if __name__ == "__main":
+        approximate_size(10000)
+
 
 # case1: args are read by location
 approximate_size(10000)  # defalt
@@ -64,9 +70,4 @@ print(sys.path)
 # maybe obj have attribute or method(ftn in obj)
 # everything in python is object, even Function
 # Function is first-class obj -> functional programming
-
-an_integer = 1
-print(an_integer)  # 1
-print(An_integer)  # NameError
-print(AN_INTEGER)  # NameError
 

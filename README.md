@@ -16,3 +16,4 @@ Summarise the source like below
 - Handle exceptions
 - Make sure case letter
 - Unbound variable
+- Attirbute: \_\_name\_\_
