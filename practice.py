@@ -30,6 +30,8 @@ def approximate_size(size, a_kilobyte_is_1024_bytes=True):
     if size < 0:
         raise ValueError("number must be non-negative")
 
+    # value were allocated without declaring the variable in advance
+    # this is called Unbound 'variable'
     multiple = 1024 if a_kilobyte_is_1024_bytes else 1000
     for suffix in SUFFIXES:
         size /= multiple

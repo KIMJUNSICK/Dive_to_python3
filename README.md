@@ -15,3 +15,4 @@ Summarise the source like below
 - Indentation 
 - Handle exceptions
 - Make sure case letter
+- Unbound variable
