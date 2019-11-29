@@ -1,5 +1,9 @@
 import sys
 
+try:
+    from approximate_size import approximate_size
+except ImportError:
+    print("Import Error!")
 
 # def function's name(arg1, arg2...):
 # python args of function are not specified for data type
@@ -22,6 +26,7 @@ def approximate_size(size, a_kilobyte_is_1024_bytes=True):
     Returns: string
     """
     # code block is determined by indentation
+    # if you could predict an error, use 'raise' for describing error
     if size < 0:
         raise ValueError("number must be non-negative")
 

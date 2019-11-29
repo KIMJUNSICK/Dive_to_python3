@@ -13,3 +13,4 @@ Summarise the source like below
 - Import path 
 - What is Object in python?
 - Indentation 
+- Handle exceptions
