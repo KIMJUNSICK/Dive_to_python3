@@ -66,3 +66,8 @@ a_list.extend("junsik2")
 
 # insert item in a fixed position
 a_list.insert(0, "first")
+
+# difference between extend & append
+b_list = [1, 2, 3]
+b_list.extend([4, 5, 6])  # [1,2,3,4,5,6]
+b_list.append([7, 8, 9])  # [1,2,3,4,5,6,[7,8,9]]
