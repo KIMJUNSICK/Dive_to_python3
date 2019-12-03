@@ -22,6 +22,7 @@ def approximate_size(size, a_kilobyte_is_1024_bytes=True):
 
     for suffix in SUFFIXES[multiple]:
         size /= multiple
+        # value that returned by the sentence below is Boolean
         if size < multiple:
             return f"{round(size,1)} {suffix}"
 

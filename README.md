@@ -17,3 +17,13 @@ Summarise the source like below
 - Make sure case letter
 - Unbound variable
 - Attirbute: \_\_name\_\_
+
+### Data type in python
+- Boolean 
+- Number
+- String 
+- Byte & byte array
+- List
+- Tuple
+- Set
+- Dictionary
