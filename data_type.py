@@ -31,3 +31,14 @@ pi = math.pi
 print(pi)
 print(math.sin(pi / 2))
 print(math.tan(pi / 4))
+
+# Boolean
+def is_it_true(anything):
+    if anything:
+        print("True")
+    else:
+        print("False")
+
+
+print(is_it_true(0))  # False
+print(is_it_true(fractions.Fraction(0, 1)))  # False
