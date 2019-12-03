@@ -47,3 +47,11 @@ print(is_it_true(fractions.Fraction(0, 1)))  # False
 a_list = ["junsik", "25", "icheon", "Ubuntu"]
 print(a_list[1])  # "25"
 print(a_list[-1])  # "Ubuntu"
+
+# Slicing List
+print(a_list[1:3])  # ["25", "icheon"]
+print(a_list[1:-1])  # ["25", "icheon"]
+print(a_list[0:3])  # ['junsik', '25', 'icheon']
+print(a_list[:-1])  # ['junsik', '25', 'icheon']
+print(a_list[:])  # all
+
