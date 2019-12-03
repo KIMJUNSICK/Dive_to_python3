@@ -71,3 +71,10 @@ a_list.insert(0, "first")
 b_list = [1, 2, 3]
 b_list.extend([4, 5, 6])  # [1,2,3,4,5,6]
 b_list.append([7, 8, 9])  # [1,2,3,4,5,6,[7,8,9]]
+
+# search for in list
+a_list.count("junsik")  # 1
+print("junsik" in a_list)  # True
+# if index can't search value you want, error could occur
+a_list.index("junsik")  # 1
+
