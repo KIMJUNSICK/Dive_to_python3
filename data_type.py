@@ -83,3 +83,10 @@ del a_list[1]
 a_list.remove("junsik2")
 # pop method remove last arg in list, if you not enter a args
 a_list.pop()  # remove last arg, '2'
+
+# judge whether true or false with list
+# empty list is True in this function.
+# # because conditional sentence recognize empty list like something
+is_it_true(["a"])  # True
+is_it_true([False])  # True
+
