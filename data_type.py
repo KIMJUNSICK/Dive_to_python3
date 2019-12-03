@@ -78,3 +78,8 @@ print("junsik" in a_list)  # True
 # if index can't search value you want, error could occur
 a_list.index("junsik")  # 1
 
+# delete item in list
+del a_list[1]
+a_list.remove("junsik2")
+# pop method remove last arg in list, if you not enter a args
+a_list.pop()  # remove last arg, '2'
