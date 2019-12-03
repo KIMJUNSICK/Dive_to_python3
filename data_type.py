@@ -55,3 +55,14 @@ print(a_list[0:3])  # ['junsik', '25', 'icheon']
 print(a_list[:-1])  # ['junsik', '25', 'icheon']
 print(a_list[:])  # all
 
+# add item to list
+# this method instantly doubles memory usage
+a_list = a_list + [2.0, 3]
+
+# add item to end of the list
+a_list.append(True)
+
+a_list.extend("junsik2")
+
+# insert item in a fixed position
+a_list.insert(0, "first")
