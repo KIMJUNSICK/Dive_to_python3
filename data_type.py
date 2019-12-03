@@ -42,3 +42,8 @@ def is_it_true(anything):
 
 print(is_it_true(0))  # False
 print(is_it_true(fractions.Fraction(0, 1)))  # False
+
+# List
+a_list = ["junsik", "25", "icheon", "Ubuntu"]
+print(a_list[1])  # "25"
+print(a_list[-1])  # "Ubuntu"
