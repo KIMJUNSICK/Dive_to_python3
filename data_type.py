@@ -217,3 +217,11 @@ print(a_dict["server"])  # "db.diveintopython3.org"
 print(a_dict["database"])  # "mysql"
 print(a_dict["db.diveintopython3.org"])  # KeyError: 'db.diveintopython3.org'
 
+# update
+a_dict["database"] = "blog"
+print(a_dict["database"])  # "blog"
+a_dict["user"] = "junsik"
+print(a_dict["user"])  # junsik
+a_dict["User"] = "mark"
+print(a_dict["User"])  # 'mark'
+
