@@ -103,3 +103,9 @@ a_tuple = (1, 2, 3, "a", "b")
 
 # tuple can be transformed to list. vice versa.
 # tuple( ) freezes list, list( ) melts tuple. Very literary!
+
+is_it_true(())  # False
+
+# if you don't write comma after item, python can't recognize your tuple as tuple
+is_it_true((False,))  # True
+
