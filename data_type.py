@@ -109,3 +109,14 @@ is_it_true(())  # False
 # if you don't write comma after item, python can't recognize your tuple as tuple
 is_it_true((False,))  # True
 
+v = (1, "a", True)
+(x, y, z) = v
+
+print(x)  # 1
+print(y)  # "a"
+print(z)  # True
+
+(MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY) = range(7)
+
+print(MONDAY)  # 0
+print(TUESDAY)  # 1
