@@ -250,3 +250,6 @@ y = None
 print(x == None)  # True
 print(x == y)  # True
 
+is_it_true(None)  # False
+is_it_true(not None)  # True
+
