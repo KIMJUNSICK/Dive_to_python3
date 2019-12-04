@@ -198,3 +198,7 @@ a_set.add(5)
 a_set.issubset(b_set)  # False
 b_set.issuperset(a_set)  # False
 
+is_it_true(set())  # False
+is_it_true({"a"})  # True
+is_it_true({False})  # False
+
