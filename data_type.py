@@ -109,6 +109,7 @@ is_it_true(())  # False
 # if you don't write comma after item, python can't recognize your tuple as tuple
 is_it_true((False,))  # True
 
+# Assign multiple values at once
 v = (1, "a", True)
 (x, y, z) = v
 
@@ -120,3 +121,13 @@ print(z)  # True
 
 print(MONDAY)  # 0
 print(TUESDAY)  # 1
+
+# what is set ?
+# make set with curly bracket
+a_set = {1}
+print(a_set)  # {1}
+print(type(a_set))  # <class 'set'>
+
+a_set = {1, 2}
+print(a_set)  # 1,2
+
