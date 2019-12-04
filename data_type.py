@@ -101,7 +101,7 @@ a_tuple = (1, 2, 3, "a", "b")
 # if item in the tuple must not change.
 # tuple is immutable so this can be used for key in dictionary
 
-# tuple can be transformed to list. vice versa.
+# tuple can be converted to list. vice versa.
 # tuple( ) freezes list, list( ) melts tuple. Very literary!
 
 is_it_true(())  # False
@@ -131,3 +131,9 @@ print(type(a_set))  # <class 'set'>
 a_set = {1, 2}
 print(a_set)  # 1,2
 
+# convert list to set
+# set don't care item order, unordered
+c_list = [1, 2, "a", "4", True]
+c_set = set(c_list)
+print(c_set)  # {1, "a", 2, "4", True}
+print(c_list)  # [1, 2, "a", "4", True], the original remains intact.
