@@ -176,3 +176,25 @@ a_set.clear()
 print(a_set)  # set()
 print(a_set.pop())  # KeyError: 'pop from an empty set'
 
+# set operation
+a_set = {2, 4, 5, 9, 12, 21, 30, 51, 76, 127, 195}
+b_set = {1, 2, 3, 5, 6, 8, 9, 12, 15, 17, 18, 21}
+
+print(30 in a_set)  # True
+print(31 in a_set)  # False
+
+print(a_set.union(b_set))  # Symmetric
+print(a_set.intersection(b_set))  # Symmetric
+print(a_set.difference(b_set))  # not Symmetric
+print(a_set.symmetric_difference(b_set))  # Symmetric
+
+a_set = {1, 2, 3}
+b_set = {1, 2, 3, 4}
+
+a_set.issubset(b_set)  # True
+b_set.issuperset(a_set)  # True
+
+a_set.add(5)
+a_set.issubset(b_set)  # False
+b_set.issuperset(a_set)  # False
+
