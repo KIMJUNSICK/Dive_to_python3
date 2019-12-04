@@ -202,3 +202,18 @@ is_it_true(set())  # False
 is_it_true({"a"})  # True
 is_it_true({False})  # False
 
+# When is it appropriate to use Dictionaries ?
+# when you search for something with key, not value
+
+# create
+a_dict = {
+    "server": "db.diveintopython3.org",
+    "database": "mysql",
+    "front": "react",
+    "framework": "django",
+}
+
+print(a_dict["server"])  # "db.diveintopython3.org"
+print(a_dict["database"])  # "mysql"
+print(a_dict["db.diveintopython3.org"])  # KeyError: 'db.diveintopython3.org'
+
