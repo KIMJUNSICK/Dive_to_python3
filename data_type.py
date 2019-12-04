@@ -238,3 +238,15 @@ print(SUFFIXES["1000"][3])  # 'TB'
 is_it_true({})  # False
 is_it_true({"name": "junsik"})  # True
 
+# what is None ?
+print(type(None))  # <class 'NoneType'>
+print(None == False)  # False
+print(None == 0)  # False
+print(None == "")  # False
+print(None == None)  # True
+
+x = None
+y = None
+print(x == None)  # True
+print(x == y)  # True
+
