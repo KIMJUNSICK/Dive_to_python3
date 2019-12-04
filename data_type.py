@@ -137,3 +137,18 @@ c_list = [1, 2, "a", "4", True]
 c_set = set(c_list)
 print(c_set)  # {1, "a", 2, "4", True}
 print(c_list)  # [1, 2, "a", "4", True], the original remains intact.
+
+# change item in set
+c_set.add("5")
+print(c_set)  # {1, "5", "a", 2, "4", True}
+
+c_set.add("4")
+print(c_set)  # {1, "5", "a", 2, "4", True}
+# set don't alllow duplicate value
+
+c_set.update({1, 2, 3})
+print(c_set)  # {1, "5", "a", 2, 3, "4", True}
+c_set.update({1, 2, 3}, {4, 5, 6})
+print(c_set)  # {1, 5, "5", "a", 2, 3, "4", 4, 6, True}
+c_set.update([1, 2, 3])  # can add list to set
+print(c_set)  # {1, 5, "5", "a", 2, 3, "4", 4, 6, True}
