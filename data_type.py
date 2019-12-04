@@ -165,3 +165,14 @@ print(a_set)  # {1, 3, 36, 6, 45, 15, 28}
 a_set.remove(21)  # KeyError: 21
 
 # difference between discard & remove is be when error occurred
+
+# pop
+# pop method of set return value randomly removed.
+print(a_set.pop())  # 1
+print(a_set.pop())  # 3
+print(a_set.pop())  # 36
+
+a_set.clear()
+print(a_set)  # set()
+print(a_set.pop())  # KeyError: 'pop from an empty set'
+
