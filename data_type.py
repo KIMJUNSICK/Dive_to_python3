@@ -235,3 +235,6 @@ print(1000 in SUFFIXES)  # True
 print(SUFFIXES["1000"])  # ['KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB']
 print(SUFFIXES["1000"][3])  # 'TB'
 
+is_it_true({})  # False
+is_it_true({"name": "junsik"})  # True
+
