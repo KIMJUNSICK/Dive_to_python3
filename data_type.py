@@ -90,3 +90,16 @@ a_list.pop()  # remove last arg, '2'
 is_it_true(["a"])  # True
 is_it_true([False])  # True
 
+# Tuple
+# inner item in tuple is immutable
+# tuple don't have method to delete or update. no pop(), no remove()
+a_tuple = (1, 2, 3, "a", "b")
+
+# When is it approproate to use tuple?
+# tuple is faster than list.
+# if the tuple have items that are no posibility of change later.
+# if item in the tuple must not change.
+# tuple is immutable so this can be used for key in dictionary
+
+# tuple can be transformed to list. vice versa.
+# tuple( ) freezes list, list( ) melts tuple. Very literary!
