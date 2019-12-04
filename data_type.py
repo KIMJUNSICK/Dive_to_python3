@@ -152,3 +152,16 @@ c_set.update({1, 2, 3}, {4, 5, 6})
 print(c_set)  # {1, 5, "5", "a", 2, 3, "4", 4, 6, True}
 c_set.update([1, 2, 3])  # can add list to set
 print(c_set)  # {1, 5, "5", "a", 2, 3, "4", 4, 6, True}
+
+# delete item in set
+a_set = {1, 3, 6, 10, 15, 21, 28, 36, 45}
+
+print(a_set)  # {1, 3, 36, 6, 10, 45, 15, 21, 28}
+a_set.discard(10)
+print(a_set)  # {1, 3, 36, 6, 45, 15, 21, 28}
+
+a_set.remove(21)
+print(a_set)  # {1, 3, 36, 6, 45, 15, 28}
+a_set.remove(21)  # KeyError: 21
+
+# difference between discard & remove is be when error occurred
