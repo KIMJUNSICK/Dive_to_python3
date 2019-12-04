@@ -225,3 +225,13 @@ print(a_dict["user"])  # junsik
 a_dict["User"] = "mark"
 print(a_dict["User"])  # 'mark'
 
+SUFFIXES = {
+    1000: ["KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"],
+    1024: ["KiB", "MiB", "GiB", "TiB", "PiB", "EiB", "ZiB", "YiB"],
+}
+
+print(len(SUFFIXES))  # 2
+print(1000 in SUFFIXES)  # True
+print(SUFFIXES["1000"])  # ['KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB']
+print(SUFFIXES["1000"][3])  # 'TB'
+
