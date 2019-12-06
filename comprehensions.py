@@ -44,3 +44,7 @@ print(metadata.st_mtime)
 print(time.localtime(metadata.st_mtime))
 print(metadata.st_size)
 print(approximate_size(metadata.st_size))
+
+# Get absolute path of file
+print(os.getcwd())
+print(os.path.realpath("comprehensions.py"))
