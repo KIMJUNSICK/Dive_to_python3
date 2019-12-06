@@ -27,3 +27,7 @@ print(current_path_plus_extension)
 print(dirname)
 print(filename)
 
+# split filename from extension
+(shortname, extension) = os.path.splitext(filename)
+print(shortname)
+print(extension)
