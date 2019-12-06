@@ -48,3 +48,15 @@ print(approximate_size(metadata.st_size))
 # Get absolute path of file
 print(os.getcwd())
 print(os.path.realpath("comprehensions.py"))
+
+# List Comprehensions
+# mapping
+a_list = [1, 2, 3, 4, 5, 6, 7, 8, 8]
+print([element * 3 for element in a_list])
+print(a_list)
+a_list = [element * 3 for element in a_list]
+print(a_list)
+
+result_glob = glob.glob("*.py")
+print([os.path.realpath(f) for f in result_glob])
+
