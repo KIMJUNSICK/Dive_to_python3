@@ -60,3 +60,10 @@ print(a_list)
 result_glob = glob.glob("*.py")
 print([os.path.realpath(f) for f in result_glob])
 
+# filter
+print([f for f in result_glob if os.stat(f).st_size > 5000])  # ['data_type.py]
+print([(os.stat(f).st_size, os.path.realpath(f)) for f in result_glob])
+print(
+    [(approximate_size(os.stat(f).st_size), os.path.realpath(f)) for f in result_glob]
+)
+
