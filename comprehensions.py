@@ -4,6 +4,8 @@
 
 import os
 import glob
+import time
+from approximate_size import approximate_size
 
 # handle current work directory
 current_path = os.getcwd()
@@ -34,5 +36,11 @@ print(extension)
 
 # Read dir
 print(os.getcwd())  # /home/junsik/projects/dive_to_python3
-print(glob.glob("*.py"))
+print(glob.glob("*.py"))  # find out .py in dive_to_python3
 
+# Read meta_data of file
+metadata = os.stat("comprehensions.py")
+print(metadata.st_mtime)
+print(time.localtime(metadata.st_mtime))
+print(metadata.st_size)
+print(approximate_size(metadata.st_size))
