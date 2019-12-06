@@ -3,7 +3,7 @@
 # handle file & directory
 
 import os
-
+import glob
 
 # handle current work directory
 current_path = os.getcwd()
@@ -31,3 +31,8 @@ print(filename)
 (shortname, extension) = os.path.splitext(filename)
 print(shortname)
 print(extension)
+
+# Read dir
+print(os.getcwd())  # /home/junsik/projects/dive_to_python3
+print(glob.glob("*.py"))
+
