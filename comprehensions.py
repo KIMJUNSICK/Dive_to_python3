@@ -82,3 +82,12 @@ humansize_dict = {
 }
 print(list(humansize_dict.keys()))
 print(humansize_dict["comprehensions"])
+
+# exchange value for key
+# only if immutable data
+a_dict = {"a": 1, "b": 2, "c": 3}
+print({value: key for key, value in a_dict.items()})
+
+b_dict = {"a": [1, 2, 3], "b": 4, "c": 5}
+{value: key for key, value in b_dict.items()}
+# TypeError: unhashable type: 'list'
