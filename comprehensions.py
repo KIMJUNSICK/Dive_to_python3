@@ -73,3 +73,12 @@ metadata_dict = {f: os.stat(f) for f in result_glob}
 print(type(metadata_dict))
 print(list(metadata_dict.keys()))
 print(metadata_dict["comprehensions.py"].st_size)
+
+# filter
+humansize_dict = {
+    os.path.splitext(f)[0]: approximate_size(meta.st_size)
+    for f, meta in metadata_dict.items()
+    if meta.st_size > 1000
+}
+print(list(humansize_dict.keys()))
+print(humansize_dict["comprehensions"])
