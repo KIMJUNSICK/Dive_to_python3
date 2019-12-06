@@ -67,3 +67,9 @@ print(
     [(approximate_size(os.stat(f).st_size), os.path.realpath(f)) for f in result_glob]
 )
 
+# Dict comprehension
+# mapping
+metadata_dict = {f: os.stat(f) for f in result_glob}
+print(type(metadata_dict))
+print(list(metadata_dict.keys()))
+print(metadata_dict["comprehensions.py"].st_size)
