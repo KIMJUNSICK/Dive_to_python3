@@ -63,3 +63,9 @@ print(a_string[3:-3])
 print(a_string[0:2])
 print(a_string[:18])
 print(a_string[18:])
+
+# Stirng & byte
+by = b"abcd\x65"
+print(by)  # b'abcde'
+print(type(by))  # <class 'bytes'>
+print(len(by))  # 5
