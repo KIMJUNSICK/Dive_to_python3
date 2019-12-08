@@ -16,3 +16,9 @@ string1 = "準植 Python"
 print(len(string1))  # 9
 print(string1[0])  # "準"
 print(string1 + "3")  # "準植 Python3"
+
+# Insert a specific value into strings
+username = "junsik"
+password = "12"
+print("{0}'s password is {1}".format(username, password))
+print(f"{username}'s password is {password}")
