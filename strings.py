@@ -35,3 +35,23 @@ print("1000{0[0]} = 1{0[1]}".format(SUFFIXES[1000]))
 
 # Format Specifiers
 print("{0:.1f} {1}".format(698.24, "GB"))
+
+# other string method
+s = """Finished files are the re-
+sult of years of scientif-
+ic study combined with the
+experience of years."""
+
+print(s.splitlines())
+print(s.lower())
+print(s.lower().count("f"))
+
+query = "user=pilgrim&database=master&password=PapayaWhip"
+a_list = query.split("&")
+
+print(a_list)  # ['user=pilgrim', 'database=master', 'password=PapayaWhip']
+
+a_list_of_lists = [value.split("=", 1) for value in a_list if "=" in value]
+print(a_list_of_lists)
+a_dict = dict(a_list_of_lists)
+print(a_dict)
