@@ -55,3 +55,11 @@ a_list_of_lists = [value.split("=", 1) for value in a_list if "=" in value]
 print(a_list_of_lists)
 a_dict = dict(a_list_of_lists)
 print(a_dict)
+
+# slicing a string
+a_string = "My alphabet starts where your alphabet ends."
+print(a_string[3:11])
+print(a_string[3:-3])
+print(a_string[0:2])
+print(a_string[:18])
+print(a_string[18:])
