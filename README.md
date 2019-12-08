@@ -29,3 +29,9 @@ Summarise the source like below
 - Dictionary
 
 ## Comprehensions
+- file & Dir
+- List comprehensions
+- Dict comprehensions
+- Set comprehensions
+
+## Strings

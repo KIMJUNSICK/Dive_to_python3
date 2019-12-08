@@ -22,3 +22,15 @@ username = "junsik"
 password = "12"
 print("{0}'s password is {1}".format(username, password))
 print(f"{username}'s password is {password}")
+
+# Compound Field Names
+
+
+SUFFIXES = {
+    1000: ["KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"],
+    1024: ["KiB", "MiB", "GiB", "TiB", "PiB", "EiB", "ZiB", "YiB"],
+}
+
+# python syntax work in replacement field
+print(SUFFIXES[1000])
+print("1000{0[0]} = 1{0[1]}".format(SUFFIXES[1000]))
